@@ -67,17 +67,16 @@ Sofle Choc Wireless"是"Sofle Choc"的一个分支，具有：
 
 - **2 块SPDT SMT 滑动开关** for battery power on/off switches. This is a common style, similar to the ones found [here](https://www.digikey.com/en/products/detail/nidec-copal-electronics/CUS-12TB/1124222), [here](https://mkultra.click/alps-ssss811101/), or [here](https://www.amazon.com/gp/product/B00E6QJ6YK).
 
-- **8 - 10 adhesive bumpers**. Used as feet to keep the keyboard from moving. If you build with a bottom plate, get the smallest, thinnest option (~2mm or less), and I also recommend getting flat top screws with the thinnest head possible, to reduce the chance of the screws bottoming out past the thickness of the rubber feet.
-This could cause the screws to scratch up the surface that the keyboard is on. Otherwise, if you don't use a bottom plate, your bumpers can be installed to the bottom of the PCB and should stick out slightly past the thickness of the hotswap sockets, which are generally the thickest component on that side of the board. If not using a bottom plate, 2mm should be close to the minimum thickness you want for the bumpers. 3mm is a bit safer. 
+- **8 - 10 防滑垫**. 用于防止底部键盘打滑。如果你选择使用底板，那么尽量选择最小、最薄的选项（大约2毫米或更薄），我还建议你选择带有尽可能薄的头的平顶螺丝，以减少螺丝超过橡胶脚厚度而触底的机会。这可能会导致螺丝刮伤键盘所在的表面。另外，如果你不使用底板，你的防滑垫可以安装在PCB的底部，应该稍微突出于热插拔插座的厚度，这些插座通常是那侧板上最厚的部件。如果不使用底板，2毫米应该接近你希望的减震器的最小厚度。3毫米会稍微安全一些。
 
 - **2x LiPo Batteries** 
-  - *The most compact option*, and one that will fit under most socketed microcontroller installations, is the 301230 LiPo battery pack, which is 3mm thick, and just shorter than the length of the microcontroller board, so these are the most suitable for low-power consumption builds. If installing the optional JST battery connector, [these batteries](https://mkultra.click/301230-lipo-battery-with-jst-connector/) work perfectly, as they already have the JST plug attached. Other options are to solder the battery wires directly to the +/- terminals on the PCB, splice wires with a JST plug attached to them, or crimp a JST connector onto the end of the battery wires yourself. 
-  - *If you choose to build for maximum battery capacity* (to support the high power consumption of RGB LEDs, for example), you can do this by installing longer standoffs (9mm work for this scenario) between the top and bottom plate and sandwich a larger battery between the PCB and bottom plate. This works with a 306080 LiPo battery pack, which also happens to fit between the two columns of mounting screws that attach the top plate to the bottom plate. To keep it from moving around, I first put a layer of masking tape with the sticky side towards the back of the PCB, sized just a little larger than the dimensions of the battery pack. Then, I created a loop of masking tape, sticky-side out, to stick the battery to the non-sticky side of the masking tape on the back of the PCB. This is just a cheap hack that seems to work fine. The bottom plate keeps the battery pretty close to the PCB in this configuration, so the tape can't really peel off and allow the battery to slide around. Keep in mind, you never want to apply pressure to LiPo battery packs, so make sure you don't get too short of standoffs that cause the bottom plate to clamp down on the battery pack against the components on the back of the main PCB. This could easily cause bad things to happen with your battery pack.
+  - *最紧凑的选项*, 并且能完美贴合到主控下方空间的,就是301230锂电池, 它的厚度是3mm, 并且长度也比主控板的长度要小，对于低电池容量的组装来说是最佳选择。如果使用JST连接器进行连接, [这些电池](https://mkultra.click/301230-lipo-battery-with-jst-connector/) 都能很好工作, 他们都有JST的插头。 其他选择是将电池线直接焊接到PCB上的+/-端子上，接上带有JST插头的线束，或者自己在电池线的末端压接一个JST连接器。 
+  - *如果你选择使用大容量电池的话* (比如说为了获取LED还有OLED显示屏的功能), 你可以通过在顶板和底板之间安装更长的螺柱（在这种情况下9毫米适用）并将较大的电池夹在PCB和底板之间来做到这一点。这适用于306080型号的锂聚合物电池包，它刚好可以安装在固定顶板和底板的两列螺丝之间。为了防止它移动，我首先在PCB背面放上一层粘面向外的胶带，尺寸稍大于电池包的尺寸。然后，我用粘性一面朝外的胶带制成一个环，将电池粘在PCB背面的胶带的非粘性一面上。这只是一个简单便宜的办法，看起来效果还不错。在这种配置下，底板将电池紧贴在PCB附近，所以胶带真的不能剥落，让电池滑动。但是需要注意：永远不要对锂聚合物电池包施加压力，所以确保螺柱长度适当，不会导致底板压在电池包上或压到主PCB背面的元件。这很容易导致电池出现问题。
 
-*See the following for an example of how the 306080 LiPo fits into the Sofle Choc Wireless*
+*下图是使用306080电池的安装示例*
 ![Example with 306080 LiPo battery installed](images/build_guide_choc_wireless/soflechocwirelesswithlargebattery.jpg)
 
-Optional components:
+可选原件:
 
 - **Up to 14 Mill-Max sockets** 14 Mill-Max sockets will cover all possible positions they can be installed on this keyboard, including 5 for each encoder, plus 2 for each Choc Switch (x2 to cover both halves). These are completely optional, but installing all of them will allow for swapping out an encoder for a Choc switch on either or both sides. Mill-Max part number [3305-1-15-80-47-27-10-0](https://www.mill-max.com/products/receptacle/3305/3305-1-15-80-47-27-10-0) are tested and good for this application. They have an outer shell that looks silver as the outer coating material is tin over nickel.  This version is also an option: [3305-1-15-15-47-27-10-0](https://www.mill-max.com/products/receptacle/3305/3305-1-15-15-47-27-10-0). The size and shape are the same, the only difference seems to be the outer plating material on these is gold. The points where the switch comes in contact with the socket is gold for both of these options. The important characteristic for these to work well in this board is that they should sit as low as possible above the surface of the PCB so that when using a Choc switch, it sits as flat as possible on the PCB.
 
@@ -173,9 +172,9 @@ The order of assemby does not matter **except** for these 3 components because t
 5. 仔细检查每一个二极管，确保你没有漏掉任何一个
 
 热拔插开关插座是电路板背面最大和最容易焊接的组件。它们被安装在电路板的背面，面向电路板的前面，当放入电路板的孔中时，它们会与电路板丝印的轮廓相匹配。焊接时，确保它们完全贴平在电路板上。要焊接它们，就加热位于插座边缘的金属连接器，它位于电路板焊盘的顶部，添加熔锡，看熔锡是否被吸入到电路板中。你想要一个完全的连接，因为这可能会承受从开关安装和拆除过程中的一些机械应力，所以在这些连接处不需要吝啬使用熔锡。在焊接连接点时，用镊子施加一些压力将插座固定住会有所帮助。
-### Mill-Max sockets (optional)
+### Mill-Max 底座 (可选配)
 
-7 Mill-Max sockets can be installed on each half, for a total of 14 for both halves. They can be installed on the 5 small circular pins used for the encoder (not used for the larger oval shaped mounting point holes), and for the 2 pins used for the Choc switch that can be installed in the same position. (See photo below)
+每一边的PCB板子上可以安装7个Mill-Max插座，两个半部分共计14个。它们可以安装在用于编码器的5个小圆形针脚上（更大的椭圆形安装点孔不需要），以及用于可以在同一位置安装的Choc轴体的2个针脚上。（如下图所示）
 
 ![Mill-Max installation locations](images/build_guide_choc_wireless/encoder-chocswitch-millmax-locations.png)
 (*Above: view of the Mill-Max locations from the bottom of the PCB*)
@@ -202,12 +201,12 @@ To make it easier to install these, it's best to do it before anything has been 
 
 
 
-### The LEDs (optional)
+### LEDs (可选配)
 
 ![LED](images/build_guide_choc/led.jpg)
 
 LEDs are placed on the back of the PCB. The lens should point up through the PCB so they shine into the bottom of the switch. One leg will have a diagonal cut. This cut leg should be aligned with the triangular marking on the PCB.
-
+LED 放置在PCB的背面。LED的镜面会通过PCB在PCB的正面被观察到，因此他们可以作为底灯
 To solder: First, use a lower temperature setting to solder the RGB LEDs. I use 270C, but some use lower, some use higher. Tin one pad, place the LED and hold using tweezers, apply heat to the leg until the solder melts and the LED is flush with the board. Now the remaining legs can be soldered without the component moving. The LEDs are sensitive to heat. Let the LED cool between soldering each leg. Use the lowest heat needed for your solder.
 
 The LED control circuit is in one long chain. If one LED is not working, inspect the connections for that LED and the LED preceeding it. Sometimes just the output of a LED is damaged. The full chain does not need to be installed if you want to test a partially built board. The top inner-most LED closest to the top of the microcontroller is the first one in the chain, and they snake around the board, going down first, then back up on the next column, etc.
@@ -228,15 +227,17 @@ This is how the jumpers should look after bridging them:
 
 ![Power and reset buttons](images/build_guide_choc_wireless/ready-for-power-reset.png)
 
-#### Power Switch
+#### 电源开关
 
 The power switch has 2 small bumps that fit into locating holes in the PCB, which help keep it in place while soldering. Tin one pad on the PCB, then put the switch in place over it. Put some downward pressure on the switch with tweezers, then press down on the switch leg that's sitting on the tinned pad with the iron until the switch leg sinks down fully into the solder, then remove the iron.
+
+电源开关有两个小凸起，可以插入PCB上的定位孔中，有助于在焊接时将其固定到位。在PCB上安装一个衬垫，然后将开关安装在上面。用镊子向开关施加一些向下的压力，然后用烙铁向下按压位于镀锡衬垫上的引脚，直到引脚完全沉入焊料中，然后取下烙铁。
 
 After this pin is soldered, solder the other pads by heating each leg and pad, then feeding solder into the joint until the joint fills with solder, then remove the iron.
 
 Flux can be helpful for this step, as these are small surface-mount joints, but be careful not to use too much flux, as it can get into the mechanical part of the switch and potentially cause problems for the switch contact points. If possible, use a flux pen rather than flux paste, and in small amounts.
 
-#### Reset button
+#### 重置按钮
 
 Solder the reset button (aka tact switch). 
 
@@ -251,13 +252,13 @@ If using a surface mount type, bend back the legs of the button to around 45 deg
 With the button placed onto the PCB, heat up one of the pads and feed solder into the joint until solder fills the hole and covers the leg of the button. Once one side is soldered into place, heat up the remaining pad and fill the joint with solder, covering the leg of the button.
 
 
-### Microcontroller
+### 主控
 
 There are various options for how the microcontroller can be installed. Here, we'll describe just a couple of those options:
 1. The Spring Pin Header option
 2. The Socket option
 
-#### Spring Pin Header option
+#### 排针直连方案
 One option is to use spring pin headers. Using the 4mm variety will allow you to place a 301230 LiPo battery between the microcontroller and the PCB, which is the ideal place for it to keep the build as low-profile as possible. With the other socket options, the same type of battery will fit, as long as the sockets are tall enough.
 
 If you use a 4mm spring pin header, installing the microcontroller with the components facing up will give the battery enough room to fit. However, this requires you to use the unmarked set of holes on the PCB. On the top of the PCB, the usual set of holes are marked with a black rectangle around them, which is intended for use with the microcontroller installed with components facing down, but if you install it with the components facing up, you must use the set of holes *without* with black rectangle around them, or the board will not function. For the components facing up configuration, the unmarked set of holes is the set of holes on the *left*, regardless of whether you're working on the left half or right half.
@@ -280,7 +281,7 @@ Even though mounting the nice!nano with spring pin headers will keep the nice!na
 ##### PCB design side note
 As a side note, different keyboard PCBs have different sized microcontroller holes, which means that even if the nice!nano holds onto them snugly, the PCB might not. For the Sofle and its ancestors (Lily58, Helix, Corne, Ergo42), the microcontroller holes on the PCB mostly seem to be the same, and they seem to fit the spring pin headers well.
 
-#### Socket option
+#### 热插拔轴座方案
 For this option, the microcontroller is installed on the top of the board, upside down and in the marked holes.
 
 * Top of the board: this is the side of the PCB opposite the diodes, LEDs and switch sockets
@@ -300,7 +301,7 @@ To install a socketed microcontroller using the diode leg approach [from splitkb
 If you ever need to remove the microcontroller: do it by gently prying the board up in small increments, working your way gradually around the board. Don't be surprised if removing it is not easy, though -- the sockets can have a surprisingly strong grip on the diode legs. However, the diode legs themselves are very flexible and will easily bend if you pull the microcontroller off by one side of the board, rather than loosening it evenly and gradually on both sides. Avoid pressure on the USB connector. 
 
 
-### Display
+### 显示屏
 
 When installed, the display will overhang the microcontroller. Since there are exposed components on the back of the display, adding some kapton tape or other insulating material to the bottom of the OLED module where it might contact the microcontroller is usually a good idea to prevent electrical shorting. Covering the exposed components on the back of the display is the main concern, as they have bare contact points that could short out against the microcontroller.
 
@@ -308,7 +309,7 @@ If you're using a 4-pin OLED display, use the 4 holes on the left which are outl
 
 If you're socketing the display (recommended), install the 4 or 5 pin female header on the top of the PCB and solder it into place. Then push the display pins into the socket. You may need to trim the male header pins so the insulation on the female and male headers mate and the display sits just above the microcontroller. The downside to socketing is that the display isn't as secure in the half height socket, and as a result, turning the keyboard upside down can cause the display to tilt away from the microcontroller somewhat. If you install a display cover, this is not as much of an issue, as the cover will keep the display from moving around too much.
 
-### JST connector (optional)
+### JST 连接器（可选配）
 
 There are 2 places on the PCB where the JST connector can be installed: a horizontal row and a vertical column of 3 pins each. These are functionally identical. Either will work, but *do not connect batteries to both at the same time*. The board does not support connecting 2 batteries, so choose one or the other, whichever is more suited to your build.
 
@@ -335,7 +336,7 @@ After determining the correct holes to solder your JST connector to, insert the 
 
 Alternatively, if your battery doesn't have a JST plug, you can solder your battery wires directly to the through holes on the board labeled `+` and `-`. RED goes to `+` and BLACK goes to `-`. This will allow the battery to be switched on and off by the switch.
 
-## Install the encoder
+## 安装旋钮编码器
 
 If using the Mill-Max sockets for the encoder pin connections, make sure the pins on the encoder are all properly aligned before trying to insert into the sockets, then carefully insert the encoder into the sockets to avoid bending the pins if not properly aligned. Adjusting the larger "mounting point" pins can provide a little bit of mechanical stability, as they have a curve in them that can provide some additional pressure on the hole in the PCB to keep them in place. 
 
@@ -345,7 +346,7 @@ It's also possible to solder all pins of the encoder and leave out the Mill-Max 
 
 
 
-### Assemble
+### 组装
 
 - Snap a few switches into the top plate, the corner switches work best
 
@@ -364,12 +365,12 @@ It's also possible to solder all pins of the encoder and leave out the Mill-Max 
 - Put at least 4 adhesive rubber feet, aka bumpons, in the corners so the keyboard doesn't move when you type. I find that it helps to have 5 total: 1 in each of the far corners, then another one along the top edge where there's a gentle corner (close to where the 8 and 9 keys are). Also, on the inner side of the board, the side where the microcontroller is, it feels more stable if you line up the 2 bumpons with each other vertically, instead of putting them as close to the far corners of the PCB as possible.
 
 
-## Warnings and disclaimers
+## 警告与声明
 
 - Be gentle with the USB ports on your microcontrollers. They are not easy to fix if damaged. A magnetic USB connector is commonly used with microcontrollers to reduce the strain on the microcontroller's USB port when connecting and disconnecting from a USB cable.
 - Keep in mind that this is a prototype of a DIY keyboard. It's not a polished product.
 
-## Firmware and programming
+## 固件与编写
 
 The Sofle Choc Wireless uses [ZMK Firmware][zmk_firmware].
 
@@ -377,7 +378,7 @@ The ZMK documentation has a guide for building and customizing your firmware, in
 
 This board uses the same layout as the Sofle keyboard that is already part of the ZMK repository, so your configurations can be done for the Sofle Choc Wireless keyboard as if it was the standard Sofle keyboard. The main differences for setting up your firmware build are whether you want to enable RGB LEDs and/or use the nice!view instead of the OLED display, which is the default supported display for the Sofle in ZMK. 
 
-### nice!view setup ###
+### nice!view 构建 ###
  To use the nice!view, you would need to add the nice_view_adapter and nice_view to your build config, so the build.yaml file would look something like this (*assuming you are building for the nice!nano v2 as your microcontroller board*): 
 
 ```
@@ -396,15 +397,15 @@ CONFIG_ZMK_DISPLAY_WORK_QUEUE_DEDICATED=y
 ```
 Without this config option, your keyboard may freeze, experience lag, or have connection issues. This option may be set as a default in the future, but at the time of writing this, it is not defaulted yet.
 
-### RGB Config ###
+### RGB 配置 ###
 
 For setting up RGB LEDs, the controller pin used for these corresponds to pin 8 of the nice!nano (Arduino Digital 0 / D0 Pro Micro pin), so if using a nice!nano, the LED config line you would need to use is `mosi-pin = <8>;` within your SPI configuration if building for the nice!nano. Also, note that since there are 30 LEDs on the Sofle Choc Wireless, you would use `chain-length = <30>;`. For more guidance on configuring LEDs, refer to the ZMK documentation for this topic: https://zmk.dev/docs/features/underglow.
 
 
-### Example zmk-config repository and useful firmware tips
+### zmk-config 示例仓库以及有用的固件构建提示
 Common configurations are set up in this repo: https://github.com/db-ok/zmk-config-soflechocwireless
 
-#### Basic config
+#### 基础配置
 The `main` branch is the "stock" configuration/keymap*, with the OLED and rotary encoder configuration options enabled in the .conf file.
 *Note that OLED displays have a slight issue when a firmware is first flashed (at least for the nice!nano). The external power defaults to OFF for devices such as the OLED display, so you must turn it on after flashing the firmware in order for the display to turn on. In addition to that, the screen may not turn on right away, even after toggling the power, so after toggling the external power ON, wait about 1 minute, then reset each half of the keyboard. At this point, the screen should turn on. After that, I recommend avoiding toggling the external power OFF, as it may not turn on again after toggling it to OFF. Hopefully, this will get fixed in a future ZMK release.*
 
@@ -413,7 +414,7 @@ The `main` branch is the "stock" configuration/keymap*, with the OLED and rotary
 -- `main` branch: https://github.com/db-ok/zmk-config-soflechocwireless/tree/main
 
 
-#### OLED and RGB config
+#### OLED 和 RGB 配置
 The `oled-rgb` branch is set up to build firmware that enables the OLED display and the RGB underglow lighting. It includes the necessary config options to enable these features, and a keymap for the RGB toggle so that you can turn the RGB light on or off on demand. The RGB config is contained in the keymap, along with comments about why this is done that way. In the future, the RGB config may be done some other way, as this is kind of a workaround for the nice!nanoV2 currently. You may also want to add more controls for the RGB lighting on your keymap. If so, refer to https://zmk.dev/docs/behaviors/underglow for the RGB lighting behavior keymap options so that you can add those controls to your keymap.
 
 *See above description of the Basic config for description of how to get the OLED display working after flashing the firmware.*
@@ -435,7 +436,7 @@ The `niceview-rgb` branch is an example of a configuration that supports both a 
 Refer to the build guide for hardware troubleshooting. The [ZMK discord](https://discord.gg/WxGbYWEtsw) is also very helpful for firmware and keymap questions.
 
 
-## Links
+## 参考链接
 
 - [ZMK Firmware][zmk_firmware]
 - [Original Sofle Choc Layout in KeyboardLayout editor][soflechoclayout] (for reference only, this may not match the default layout in ZMK)
