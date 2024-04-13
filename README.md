@@ -78,4 +78,8 @@ Sofle RGB was contributed by [Dane Evans](https://github.com/DaneEvans).
 Sofle Choc was designed by [Brian Low](https://github.com/BrianLow)
 
 
+## Using Acrylic Plates & Magenet
 
+![Sofle Choc Wireless Keyboard with Acrylic Plates](docs/images/Acrylic%20Top-Bottom.jpg)
+
+![Sofle Choc Wireless Keyboard pack](docs/images/Magnet-Packed.jpg)
